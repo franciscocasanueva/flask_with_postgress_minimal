@@ -1,6 +1,6 @@
 from flask import render_template, request, redirect
 from db import db_tools
-from db import create_app
+from db.db_tools import create_app
 from db.models import Cats
 
 app = create_app()
