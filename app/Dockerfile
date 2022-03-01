@@ -1,8 +1,8 @@
 FROM python:3
 EXPOSE 5000
 WORKDIR /usr/scr/app
-COPY app/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY app .
+COPY . .
 
 CMD ["python", "app.py"]
